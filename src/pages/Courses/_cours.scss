@@ -1,0 +1,14 @@
+@import './../../assets/scss/utilities/mixins';
+.courses {
+  h3 {
+    margin-right: 59px;
+  }
+  #save-places-button {
+    float: left;
+    border-radius: 10px;
+    height: 50px;
+    width: 170px;
+    border: none;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,33 @@
+.advice-block-content {
+  input {
+    border: 1px solid #dee4ed;
+    border-radius: 9px;
+    height: 24px;
+    width: 100%;
+    padding: 10px;
+  }
+  display: flex;
+  width: 100%;
+  .input-advices-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+  .advices-wrapper {
+    width: 97%;
+    .add-advice {
+      padding: 10px;
+      height: 50px;
+      border-bottom: 1px solid #dee4ed;
+    }
+    .add-new-column {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+      color: #2e6ff1;
+    }
+  }
+}

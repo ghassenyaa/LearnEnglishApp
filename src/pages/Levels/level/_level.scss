@@ -1,0 +1,64 @@
+@import './../../../assets/scss/utilities/mixins';
+
+.level-title {
+  font-size: 25px;
+}
+
+.title-circular-progressbar-wrapper {
+  padding: 10px;
+}
+.vertical-timeline-content-wrapper {
+  display: flex !important;
+  flex-direction: row !important;
+  width: 100%;
+  justify-content: space-between !important;
+  h3 {
+    margin-top: 10px;
+  }
+}
+.vertical-timeline.vertical-timeline--two-columns:before {
+  background: #2196f3;
+}
+
+.vertical-timeline-element:first-child {
+  margin-top: -22px !important;
+}
+
+.vertical-timeline-element-icon,
+.bounce-in {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.vertical-timeline-content-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.vertical-timeline-element:last-child {
+  margin-top: 10px !important;
+}
+
+.vertical-timeline--two-columns .vertical-timeline-element-content {
+  width: 44%;
+  height: 20% !important;
+  border-radius: 20px !important;
+  border: none !important;
+}
+
+@include mq(1170px, max) {
+  .vertical-timeline--two-columns .vertical-timeline-element-content {
+    width: 89%;
+  }
+
+  .vertical-timeline-element {
+    margin-left: 15px !important;
+  }
+}
+
+@include mq(500px, max) {
+  .vertical-timeline--two-columns .vertical-timeline-element-content {
+    width: 70%;
+  }
+}

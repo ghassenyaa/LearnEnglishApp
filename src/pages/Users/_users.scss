@@ -1,0 +1,157 @@
+@import './../../assets/scss/utilities/mixins';
+
+.table_user {
+  width: 100%;
+}
+.headers_users_btn_and_searchbar {
+  width: 100%;
+}
+
+.user_photo {
+  margin-top: 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.id_user {
+  width: 7%;
+  color: #9193a2;
+  font-weight: bold;
+  font-size: 20px;
+}
+.header_table_user {
+  background-color: #f7f7f7;
+  color: red;
+}
+.body_table_user {
+  & td {
+    padding: 0.5em;
+  }
+  width: 100%;
+  cursor: pointer;
+}
+.btn_update {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.photo_users_table {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+}
+.header_users {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.input_search_users {
+  margin-top: 10px;
+}
+.search-input_user {
+  margin-top: -66px;
+  margin-left: 150px;
+  width: 100%;
+
+  border-radius: 6px;
+  height: 50px;
+  background-color: #f5f5f5;
+  img {
+    width: 22px;
+    height: 22px;
+    margin-top: 10px;
+    margin-right: 10px;
+    filter: invert(70%) sepia(1%) saturate(5085%) hue-rotate(246deg) brightness(85%) contrast(57%);
+  }
+  input {
+    border: none;
+    padding: 10px;
+    width: 100%;
+    height: 44px;
+    background-color: #f5f5f5;
+  }
+  ::placeholder {
+    font-size: 17px;
+    float: right;
+    font-weight: bold;
+  }
+  input:focus {
+    outline: none;
+  }
+  .input-icon-wrapper_user {
+    display: flex;
+    width: 100%;
+  }
+}
+
+.card_header_detail {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  width: 20%;
+
+  align-items: center;
+}
+.card_body_details {
+  display: flex;
+
+  width: 100%;
+
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 20px;
+}
+.photo_detail_user {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+}
+.full_name_detail_user {
+  font-weight: bold;
+}
+.detail_body_user {
+  display: flex;
+  justify-content: space-between;
+}
+.user-id-table {
+  font-weight: bold;
+}
+.personal_info_user {
+  color: blue;
+  font-weight: 700;
+  font-size: 16px;
+  margin: 10px 10px;
+}
+.title_info_user {
+  color: #9193a2;
+  font-weight: 700;
+  margin: 10px;
+}
+.info_user_item {
+  font-weight: bold;
+  margin: 10px;
+}
+.link_to_details_user {
+  color: black;
+}
+.btn_user_update {
+  width: 5%;
+}
+.scrollit {
+  overflow: scroll;
+  height: 100px;
+}
+@include mq(1077px, max) {
+  .header_users {
+    display: flex;
+    flex-direction: column;
+  }
+  .search-input_user {
+    margin: 0;
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,75 @@
+@import './../../assets/scss/utilities/mixins';
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  margin-top: 58px;
+  img {
+    margin-right: 5px;
+  }
+  .page-title {
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 9px;
+    margin-right: 13px;
+  }
+  button {
+    font-weight: bold;
+    cursor: pointer;
+    span {
+      margin-top: -3px;
+    }
+  }
+  .btn-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+}
+.btn_exercice_update {
+  width: 145px;
+}
+@include mq(874px, max) {
+  .page-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .page-header {
+    .btn-wrapper {
+      display: flex;
+      flex-direction: column-reverse;
+      gap: 10px;
+    }
+  }
+}
+.label-input-savebtn-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px;
+}
+.label-input-wrapper {
+  width: 70%;
+  label {
+    font-weight: bold;
+    font-size: 20px;
+  }
+  #title-input {
+    border-radius: 8px;
+    border: 1px solid #dee4ed;
+  }
+}
+#title-input {
+  width: 100%;
+}
+.select-button-wrapper {
+  display: flex;
+  gap: 10px;
+}
+.title-input-button-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+}

@@ -1,0 +1,104 @@
+.wrapper-btn-input-view {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  input {
+    width: 100%;
+    height: 50px;
+    border-radius: 9px;
+    padding: 10px;
+  }
+  button {
+    background: #2e6ff1;
+    border-radius: 4px;
+    width: 99px;
+    padding: 5px;
+    height: fit-content;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+  }
+  span {
+    font-weight: bold;
+    font-size: 17px;
+    color: #484848;
+  }
+}
+
+.card-delivery-block {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  .card-delivery-block-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    .first-element {
+      width: 30px;
+      height: 70px;
+      background: #2e6ff1;
+      color: white;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transform: translateY(-50%);
+      writing-mode: vertical-rl;
+      text-orientation: mixed;
+      margin-right: -13px;
+      margin-top: -108px;
+    }
+    .inputs-wrapper {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+  }
+}
+
+.wrapper-input-view {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+.title-input-card-delivry {
+  font-weight: bold;
+}
+
+#button-confirm-card-delevry {
+  border: 1px solid #ccc;
+  background-color: #2e6ff1;
+  border-radius: 10px;
+  width: 200px;
+  height: 50px;
+  cursor: pointer;
+  margin: auto;
+  span {
+    color: white !important;
+  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-input-wrapper {
+  width: 100%;
+}
+.card-delivery-block-content {
+  width: 100%;
+}
+
+.wrapper-input-btnconfirm-question {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.wrapper-input-btnconfirm-answers {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}

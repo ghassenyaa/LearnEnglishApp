@@ -1,0 +1,43 @@
+@import './../../../assets/scss/utilities/mixins';
+.card {
+  width: 32%;
+  height: fit-content;
+  padding: 10px;
+  display: flex;
+  border-radius: 20px;
+  justify-content: space-between;
+  animation: poof 0.5s forwards;
+  transition: all 0.3s ease;
+
+  img {
+    height: 129px;
+  }
+  .CircularProgressbar {
+    width: 69px;
+  }
+  .language-percentage-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .language {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    span {
+      font-size: 17px;
+    }
+  }
+}
+.card:hover {
+  z-index: 80;
+  box-shadow: 2px 2px 30px #b9b9b9;
+  transform: scale(1.03);
+  transition: all 0.5s;
+}
+
+@include mq(1704px, max) {
+  .card {
+    width: 100%;
+  }
+}

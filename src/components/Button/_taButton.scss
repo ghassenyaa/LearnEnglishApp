@@ -1,0 +1,64 @@
+@import './../../assets/scss/utilities/mixins';
+.ta-btn {
+  border-radius: 0 !important;
+  text-transform: none !important;
+  background: #ffffff;
+  transition: all 300ms ease;
+  &.btn-rounded {
+    border-radius: 8px !important;
+  }
+  &.onlyIcon {
+    & > .MuiButton-label > .MuiButton-startIcon {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+  &.dark {
+    background: #18698d;
+    color: #ffffff;
+    &:hover {
+      background: #0c5677;
+    }
+  }
+  &.primary {
+    background: #2e6ff1;
+    color: #ffffff;
+    &:hover {
+      background: #487eeb;
+    }
+  }
+  &.grey {
+    background: #ffffff;
+    color: #2ba7df;
+    &:hover {
+      background: #edf2f5;
+    }
+  }
+  & > .MuiButton-label > span > .MuiSvgIcon-root.MuiSvgIcon-fontSizeSmall {
+    font-size: 14px !important;
+  }
+  &.Mui-disabled {
+    &.primary {
+      background: #c5c5c5;
+      color: #7e7e7e;
+      opacity: 0.8;
+    }
+  }
+  &.btn-lg {
+    height: 50px !important;
+    width: 169px !important;
+  }
+  .mt-12 {
+    margin-top: 12px !important;
+    margin-left: 10px !important;
+  }
+}
+@include mq(874px, max) {
+  .ta-btn {
+    &.btn-lg {
+      padding-top: 9px !important;
+      height: 43px !important;
+      width: 151px !important;
+    }
+  }
+}

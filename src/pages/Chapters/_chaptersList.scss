@@ -1,0 +1,10 @@
+@import './../../assets/scss/utilities/mixins';
+.chapter-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 20px;
+}
+.chapters-title {
+  margin-top: 60px !important;
+}

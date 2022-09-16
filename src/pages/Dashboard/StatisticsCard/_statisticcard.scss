@@ -1,0 +1,36 @@
+@import './../../../assets/scss/utilities/mixins';
+.statistics-card {
+  width: fit-content;
+  height: fit-content;
+  cursor: pointer;
+  background-color: #f7f7f7;
+  border-radius: 20px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  .statistics-title {
+    color: #9eafc0;
+    font-size: 20px;
+  }
+  .statistics-nbr {
+    color: #369fff;
+    border-left: 3px solid #369fff;
+    border-radius: 3px;
+    span {
+      font-size: 30px;
+    }
+    font-size: 20px;
+  }
+}
+.statistics-card:hover {
+  z-index: 80;
+  box-shadow: 2px 2px 30px #b9b9b9;
+  transform: scale(1.03);
+  transition: all 0.5s;
+}
+@include mq(1644px, max) {
+  .statistics-card {
+    width: 100%;
+  }
+}

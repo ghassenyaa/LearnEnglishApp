@@ -1,0 +1,63 @@
+@import './../../assets/scss/utilities/mixins';
+.chapter {
+  width: 24%;
+  height: 345px;
+  background: #ffffff;
+  border: 1px solid #dee4ed;
+  box-sizing: border-box;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  transition: 0.3s;
+  .title-description-wrapper {
+    padding: 5px;
+    color: black;
+  }
+  .title-description-moreverticon-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  img {
+    width: 100%;
+    height: fit-content;
+  }
+  .title {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .description {
+    font-size: 16px;
+  }
+  .image-chapters {
+    object-fit: cover;
+    height: 255px;
+  }
+}
+.chapter:hover {
+  z-index: 80;
+  box-shadow: 2px 2px 30px #b9b9b9;
+  transform: scale(1.03);
+  transition: all 0.5s;
+}
+
+@include mq(1000px, max) {
+  .chapter {
+    width: 45%;
+  }
+}
+@include mq(1794px, max) {
+  .chapter {
+    width: 31%;
+  }
+}
+@include mq(948px, max) {
+  .chapter {
+    width: 45%;
+  }
+}
+@include mq(304px, max) {
+  .chapter {
+    width: 100%;
+    height: fit-content;
+  }
+}

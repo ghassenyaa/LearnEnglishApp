@@ -1,0 +1,34 @@
+.logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+}
+.logo_sidebar {
+  display: flex;
+  flex-direction: column;
+}
+.secend_text_learn_english {
+  font-size: xx-small;
+  font-weight: bold;
+  color: black;
+}
+.image_sidebar {
+  width: 60px;
+  margin-right: 15px;
+}
+.first_text_takiacademy {
+  color: black;
+  font-weight: bold;
+}
+.firstandsecande_text {
+  display: none;
+}
+.image_sidebar_after {
+  width: 40px;
+  margin-top: -15px;
+  margin-bottom: 50px;
+}
