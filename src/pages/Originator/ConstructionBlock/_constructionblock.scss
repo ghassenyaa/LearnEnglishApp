@@ -1,0 +1,46 @@
+.item1 {
+  margin-top: -23px;
+  margin-right: -18px;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  padding: 10px;
+  .first-block-title {
+    font-weight: bold;
+    font-size: 21px;
+    margin-bottom: 28px;
+  }
+  .cards-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-right: -9px;
+    margin-top: 10px;
+  }
+  .img-container {
+    width: 44px;
+    height: 44px;
+    background: #f5f5f5;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .search {
+    margin: 0 !important;
+    width: 84% !important ;
+  }
+  .searchinput-filter-wrapper {
+    display: flex;
+    gap: 15px;
+    margin-top: 11px;
+  }
+}
+
+.exercise-title {
+  color: black !important;
+}
+
+#img {
+  width: 28px !important;
+  height: 28px !important;
+}

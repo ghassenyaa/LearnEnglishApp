@@ -1,0 +1,16 @@
+.question-block-content {
+  display: flex;
+  span {
+    font-size: 15px;
+  }
+  .suggestion-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+}
+.header-one-correct-choise {
+  display: flex;
+  flex-direction: row;
+}

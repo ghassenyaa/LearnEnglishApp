@@ -1,0 +1,41 @@
+@import './../../assets/scss/utilities/mixins';
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ececec;
+  height: 79px;
+}
+.icon {
+  padding: 20px;
+  margin-right: 22px;
+}
+@include mq(600px, max) {
+  .header-wrapper {
+    margin-right: 0%;
+    gap: 10px !important;
+  }
+}
+
+.search-main {
+  border-radius: 10px !important;
+  max-width: 655px !important;
+  @include mq(1920px, min) {
+    width: 888px !important;
+  }
+  @include mqs(1920px, 1420px) {
+    width: 100% !important;
+    margin-right: 94px !important;
+  }
+  @include mqs(1420px, 1200px) {
+    width: 100% !important;
+    margin-right: 64px !important;
+  }
+  @include mqs(1200px, 960px) {
+    width: 100% !important;
+    margin-right: 34px !important;
+  }
+  @include mq(960px, max) {
+    width: 100% !important;
+    margin-right: 24px !important;
+  }
+}

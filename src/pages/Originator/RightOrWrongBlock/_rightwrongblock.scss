@@ -1,0 +1,42 @@
+.right-wrong-block {
+  .right-wrong-block-content {
+    display: flex;
+    .right-wrong-block-content-wrapper {
+      width: 100%;
+    }
+    .wright-answer {
+      font-size: 17px;
+    }
+    .btn-wrapper {
+      display: flex;
+      gap: 10px;
+      button {
+        border: 1px solid #dee4ed;
+        box-sizing: border-box;
+        border-radius: 9px;
+        cursor: pointer;
+        background: white;
+        height: 50px;
+        display: flex;
+        width: 187px;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        span {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+  button {
+    background: #2e6ff1;
+
+    border: none;
+    cursor: pointer;
+    color: #fff;
+  }
+}
+#button {
+  margin-right: 120px;
+  margin-top: 20px;
+}

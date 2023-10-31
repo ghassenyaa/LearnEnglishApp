@@ -1,0 +1,23 @@
+.btn-container {
+  display: flex;
+  margin-right: 10px;
+  gap: 10px;
+}
+.add-text {
+  width: 181px;
+  height: 44px;
+  display: flex;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: #2e6ff1;
+  border: 1px solid #2e6ff1;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+.add-answer {
+  @extend .add-text;
+  color: #1cbe2b;
+  border: 1px solid #1cbe2b;
+}

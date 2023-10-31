@@ -1,0 +1,18 @@
+.hidden-word-card {
+  width: fit-content;
+  height: fit-content;
+  background: #ffffff;
+  border: 1px solid #dee4ed;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 5px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.hidden-word-card:hover {
+  z-index: 80;
+  box-shadow: 2px 2px 30px #b9b9b9;
+  transform: scale(1.03);
+  transition: all 0.5s;
+}

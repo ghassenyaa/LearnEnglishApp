@@ -1,0 +1,28 @@
+@import './../../assets/scss/utilities/mixins';
+.exercise-wrapper {
+  .card-title-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  #save-places-button {
+    float: left;
+    border-radius: 10px;
+    height: 50px;
+    width: 170px;
+    border: none;
+    cursor: pointer;
+  }
+  .exertitle {
+    margin-right: 39px;
+  }
+}
+@include mq(900px, max) {
+  .exercisetitle {
+    margin-right: 0px;
+  }
+}
+#img {
+  width: 28px !important;
+  height: 28px !important;
+}

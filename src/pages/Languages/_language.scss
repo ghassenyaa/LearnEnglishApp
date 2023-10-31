@@ -1,0 +1,17 @@
+@import './../../assets/scss/utilities/mixins';
+.cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20.5px;
+  width: 100%;
+  margin-top: 20px;
+}
+.languages-title {
+  font-size: 40px;
+  font-weight: bold;
+}
+@include mq(1470px, max) {
+  .cards-wrapper {
+    gap: 31px;
+  }
+}

@@ -1,0 +1,17 @@
+@import './../../assets/scss/utilities/mixins';
+.languages-courses-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 20px;
+}
+.languages-cards-title {
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+@include mq(996px, max) {
+  .languages-courses-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}

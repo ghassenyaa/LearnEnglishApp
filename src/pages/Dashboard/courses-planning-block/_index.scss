@@ -1,0 +1,73 @@
+@import './../../../assets/scss/utilities/mixins';
+.courses-planning-wrapper {
+  border-left: 1px solid #dee4ed;
+  height: 100%;
+  padding-left: 15px;
+  .cards-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .title {
+    font-size: 26px;
+    font-weight: bold;
+  }
+  .title-viewall-wrapper {
+    display: flex;
+    gap: 10px;
+    span {
+      margin-top: 10px;
+      color: #369fff;
+      font-weight: bold;
+    }
+  }
+  .courses-header {
+    display: flex;
+    gap: 537px;
+    margin-bottom: -17px;
+  }
+  .planning {
+    width: 100%;
+    .courses-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 20px;
+      width: 100%;
+    }
+  }
+  .title-datepicker-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+}
+.courses-planning-block {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+@include mq(1806px, max) {
+  .cards-wrapper {
+    gap: 10px;
+    width: 100%;
+  }
+}
+@include mq(1704px, max) {
+  .courses-planning-wrapper {
+    border: none !important;
+    .planning {
+      .courses-wrapper {
+        grid-template-columns: 1fr;
+      }
+    }
+    .title-datepicker-wrapper {
+      display: none;
+    }
+    .cards-wrapper {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}

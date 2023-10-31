@@ -1,0 +1,17 @@
+@import './../../../assets/scss/utilities/mixins';
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+  img {
+    height: 491px;
+    width: 43%;
+  }
+}
+@include mq(1360px, max) {
+  img {
+    display: none;
+  }
+}

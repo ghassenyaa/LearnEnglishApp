@@ -1,0 +1,19 @@
+@import './../../assets/scss/utilities/mixins';
+.dashboard {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  height: 100%;
+  margin-top: -24px;
+  margin-bottom: -24px;
+}
+
+@include mq(1704px, max) {
+  .dashboard {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@include mq(1304px, max) {
+  .dashboard {
+    grid-template-columns: 1fr;
+  }
+}

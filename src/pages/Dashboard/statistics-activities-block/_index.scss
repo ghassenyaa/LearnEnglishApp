@@ -1,0 +1,46 @@
+@import './../../../assets/scss/utilities/mixins';
+.statistics-activities-block {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.statistics-activities-wrapper {
+  height: 100%;
+  padding-right: 10px;
+  .title {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+  .statistics-card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+  }
+  .bar-wrapper {
+    width: 100%;
+    margin-top: 46px;
+  }
+  .bar-title {
+    margin-bottom: 3px;
+    font-size: 26px;
+    font-weight: bold;
+    padding-top: 10px;
+  }
+}
+@include mq(1704px, max) {
+  .statistics-activities-wrapper {
+    .bar-wrapper {
+      margin-top: 0px;
+    }
+  }
+}
+@include mq(1644px, max) {
+  .statistics-card-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+}

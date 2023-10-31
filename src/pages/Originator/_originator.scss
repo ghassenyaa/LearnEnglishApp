@@ -1,0 +1,21 @@
+@import './../../assets/scss/utilities/mixins';
+.originator {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  height: 100%;
+}
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+.right-word-block-answer-btn {
+  border-bottom: 1px solid #1cbe2b;
+  border-top: none !important;
+  border-left: none !important;
+  border-right: none !important ;
+  border-radius: 0px !important;
+}
