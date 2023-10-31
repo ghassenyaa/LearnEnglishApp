@@ -19,9 +19,7 @@ function App() {
   return (
     <div className={classes.root}>
       <CssBaseline />
-      <BrowserRouter>
-        <AuthProvider>{renderRoutes(routes)}</AuthProvider>
-      </BrowserRouter>
+      <BrowserRouter>{renderRoutes(routes)}</BrowserRouter>
       <ModalsProvider />
     </div>
   );
