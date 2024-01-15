@@ -1,24 +1,21 @@
-name: Super-Linter
-
-on:
-  push:
-    branches:
-      - main
-
+name: remote ssh command
+on: [push]
 jobs:
-  lint:
+  build: # First job
+    name: Build
     runs-on: ubuntu-latest
-
     steps:
-    - name: Checkout Repository
-      uses: actions/checkout@v2
-
-    - name: Set up Super-Linter
-      uses: github/super-linter@v3
-      env:
-        DEFAULT_BRANCH: main
-        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}  # Set to true to validate all files, including non-supported file types
-
-
-
+      - name: executing remote ssh commands using password
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
+          port: ${{ secrets.PORT }}
+          script: | 
+           cd /var/www/LearnEnglishApp/
+           git fetch origin main
+           sudo git pull
+           sudo npm install 
+           pm2 list 
 
