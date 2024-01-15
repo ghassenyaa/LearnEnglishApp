@@ -17,4 +17,4 @@ jobs:
             cd /var/www/LearnEnglishApp/
             git fetch origin main
             sudo git pull
-            sudo pm2 ls
+            cat /var/www/LearnEnglishApp/.github/workflows/superlineter.yaml
