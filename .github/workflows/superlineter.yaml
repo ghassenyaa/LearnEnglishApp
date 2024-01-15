@@ -1,5 +1,6 @@
 name: remote ssh command
 on: [push]
+
 jobs:
   build: # First job
     name: Build
@@ -13,9 +14,7 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
           script: | 
-           cd /var/www/LearnEnglishApp/
-           git fetch origin main
-           sudo git pull
-           sudo npm install 
-           pm2 ls
-
+            cd /var/www/LearnEnglishApp/
+            git fetch origin main
+            sudo git pull
+            sudo pm2 ls
