@@ -17,5 +17,5 @@ jobs:
            git fetch origin main
            sudo git pull
            sudo npm install 
-           pm2 list 
+           pm2 ls
 
